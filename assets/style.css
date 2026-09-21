@@ -206,12 +206,12 @@ p { margin: 0 0 1em; }
 .card__front { position: relative; background: #fff; box-shadow: var(--shadow-card); border-top: 5px solid var(--fam); display: flex; flex-direction: column; height: 100%; transition: transform var(--t-med) var(--ease-out), box-shadow var(--t-med); }
 .card:not(.is-flipped):hover .card__front { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
 .card__back { position: absolute; inset: 0; overflow: hidden; transform: rotateY(180deg); background: #fff; color: var(--ml-noir); padding: 18px 20px 16px; display: flex; flex-direction: column; box-shadow: var(--shadow-card); border-top: 5px solid var(--fam); font-size: .86rem; line-height: 1.4; }
-.card__back h3 { color: var(--ml-violet); font-family: var(--font-titre); font-style: italic; font-weight: 800; font-size: 1.15rem; margin: 0 0 .2em; }
+.card__back h3 { padding-right: 5.2em; color: var(--ml-violet); font-family: var(--font-titre); font-style: italic; font-weight: 800; font-size: 1.15rem; margin: 0 0 .2em; }
 .card__back p { margin: 0 0 .45em; color: rgba(35,0,0,.88); }
 .back__label { text-transform: uppercase; letter-spacing: .12em; font-size: .66rem !important; font-weight: 700; color: var(--ml-prune) !important; margin: .35em 0 .15em !important; }
 .ludic { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin: .35em 0 .45em !important; }
 .ludic .back__label { margin: 0 !important; }
-.back__close { align-self: flex-end; margin: -6px -6px 2px 0; border: 0; background: var(--ml-ciel-bg); color: var(--ml-violet); font-weight: 700; font-size: .78rem; padding: .35em .8em; border-radius: var(--r-pill); }
+.back__close { position: absolute; top: 12px; right: 12px; z-index: 1; border: 0; background: var(--ml-ciel-bg); color: var(--ml-violet); font-weight: 700; font-size: .78rem; padding: .35em .8em; border-radius: var(--r-pill); }
 .back__close:hover { background: var(--ml-violet); color: #fff; }
 .ludic b { color: var(--ml-violet); }
 .ludic__stars { display: inline-flex; gap: 3px; }
@@ -435,3 +435,35 @@ html.capture .hero { min-height: 0; }
   .modal__ext { display: none; }
   .toast { flex-wrap: wrap; }
 }
+
+/* Essai : texte rayé animé (inspiré de cafeine.studio) */
+.hero__text h1 em.raye-net, .hero__text h1 em.raye-degrade {
+  display: inline-block; padding-bottom: .12em; margin-bottom: -.12em;
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  animation: rayeDefile 18s linear infinite;
+}
+/* période = 3 bandes de .3em ; décalage animé = 10 périodes en x (0,9em × √2 × 10) pour une boucle sans saut */
+.hero__text h1 em.raye-net { background-image: repeating-linear-gradient(-45deg,
+  #ffffff 0 .3em, #f5a04c .3em .6em, #b0d8f4 .6em .9em); }
+.hero__text h1 em.raye-degrade { background-image: repeating-linear-gradient(-45deg,
+  #ffffff 0, #ffc7db .15em, #f5a04c .3em, #ffd9b0 .45em, #b0d8f4 .6em, #e6f3fc .75em, #ffffff .9em); }
+/* Dégradé doux à 3 couleurs max qui glisse lentement (même esprit que les fonds hero / témoignages) */
+.hero__text h1 em.degrade-doux {
+  display: inline-block; padding-bottom: .12em; margin-bottom: -.12em;
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  background-size: 250% 100%; animation: degradeGlisse 9s ease-in-out infinite alternate;
+}
+.degrade-doux.dd-soleil { background-image: linear-gradient(100deg, #ffffff 0%, #ffd7a8 35%, #f5a04c 60%, #ffffff 100%); }
+.degrade-doux.dd-ciel   { background-image: linear-gradient(100deg, #ffffff 0%, #b0d8f4 50%, #ffffff 100%); }
+.degrade-doux.dd-violet { background-image: linear-gradient(100deg, #522583 0%, #951b81 50%, #522583 100%); }
+/* Dégradé horizontal doux pêche → rose → rouge qui glisse d'un bout à l'autre du titre */
+.hero__text h1 em.degrade-doux.dd-peche {
+  animation-duration: 12s;
+  /* pêche → orange → rouge → rose → prune → violet → bleu foncé → bleu clair ; l'animation alternée refait le chemin inverse */
+  background-image: linear-gradient(90deg, #ffe2c4 0%, #f5a04c 11%, #ff3b30 21%, #f0102f 26%, #ff4f98 36%, #b52aa0 46%, #6a2fa8 55%, #522583 61%, #3f63b0 71%, #4c76ba 76%, #b0d8f4 86%, #d6ecfb 94%, #e6f4fd 100%);
+  filter: drop-shadow(0 .04em .06em rgba(35,0,0,.35)) drop-shadow(0 .1em .3em rgba(35,0,0,.4));
+}
+@keyframes degradeGlisse { from { background-position: 0% 50%; } to { background-position: 100% 50%; } }
+@media (prefers-reduced-motion: reduce) { .hero__text h1 em.degrade-doux { animation: none; } }
+@keyframes rayeDefile { from { background-position: 0 0; } to { background-position: 12.728em 0; } }
+@media (prefers-reduced-motion: reduce) { .hero__text h1 em.raye-net, .hero__text h1 em.raye-degrade { animation: none; } }

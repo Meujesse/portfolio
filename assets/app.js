@@ -257,3 +257,12 @@
   if (flipParam) cards.filter(c => c.dataset.id === flipParam).forEach(c => c.classList.add('is-flipped'));
   window.__portfolio = { applyFilter, applyPublic, openCardModal, closeModal, markPlayed, played: () => played.slice() };
 })();
+
+/* Essai : texte rayé animé (inspiré de cafeine.studio) — ?lettres=degrade pour la version fondue */
+(() => {
+  const em = document.querySelector('.hero__text h1 em');
+  if (!em) return;
+  const v = new URLSearchParams(location.search).get('lettres');
+  const variantes = { net: ['raye-net'], degrade: ['raye-degrade'], ciel: ['degrade-doux', 'dd-ciel'], violet: ['degrade-doux', 'dd-violet'], soleil: ['degrade-doux', 'dd-soleil'] };
+  em.classList.add(...(variantes[v] || ['degrade-doux', 'dd-peche']));
+})();
