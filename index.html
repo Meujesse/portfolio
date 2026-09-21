@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio interactif · Meujesse Learning</title>
+<meta name="description" content="Des modules e-learning ludiques et sur mesure pour votre entreprise. Seize extraits réels à tester en trente secondes : personnages qui parlent, 3D à explorer, jeux.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Portfolio interactif · Meujesse Learning">
+<meta property="og:description" content="Des modules e-learning ludiques et sur mesure pour votre entreprise. Seize extraits réels à tester en trente secondes : personnages qui parlent, 3D à explorer, jeux.">
+<meta property="og:image" content="https://portfolio.meujesselearning.com/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Portfolio interactif · Meujesse Learning">
+<meta name="twitter:description" content="Des modules e-learning ludiques et sur mesure pour votre entreprise. Seize extraits réels à tester en trente secondes.">
+<meta name="twitter:image" content="https://portfolio.meujesselearning.com/assets/og.jpg">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="assets/style.css?v=25">
+</head>
+<body>
+
+<a class="skip" href="#modules">Aller aux exemples de modules</a>
+
+<header class="nav" id="nav">
+  <div class="nav__in">
+    <a class="nav__logo" href="https://meujesselearning.com" aria-label="Meujesse Learning">
+      <img src="assets/logo-bicolore.png" alt="Meujesse Learning">
+      <span class="nav__tag">Portfolio</span>
+    </a>
+    <nav class="nav__links" aria-label="Navigation">
+      <a href="#modules">Modules</a>
+      <a href="#temoignages">Retours clients</a>
+      <a href="#methode">Méthode</a>
+      <a href="#faq">Questions</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav__right">
+      <button class="pill pill--ghost nav__motion" type="button" data-motion aria-pressed="false" title="Activer ou couper les animations de la page">
+        <span class="nav__motion-ico" aria-hidden="true"></span><span>Animations</span>
+      </button>
+      <div class="score" data-score aria-live="polite">
+        <span class="score__dice" aria-hidden="true"></span>
+        <span><b data-score-n>0</b>/<span data-score-total>16</span> modules consultés</span>
+      </div>
+      <a class="pill pill--rouge nav__cta" href="https://calendly.com/jyn-chereze/decouverte" target="_blank" rel="noopener" data-cta>Prenez un appel</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============================ HERO ============================ -->
+<section class="hero" id="top">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="hero__shapes" aria-hidden="true">
+    <i class="hx hx--1"></i><i class="hx hx--2"></i><i class="hx hx--3"></i><i class="lz lz--1"></i><i class="lz lz--2"></i>
+  </div>
+  <div class="hero__in">
+    <div class="hero__text">
+      <p class="kicker" data-reveal>Portfolio de Meujesse Learning : e-learning ludique</p>
+      <h1 data-reveal style="--d:.08s"><span class="h1__petit">Ne lisez pas nos projets.</span><em>Testez nos modules.</em></h1>
+      <p class="hero__pitch" data-reveal style="--d:.14s">Des modules e-learning <b>ludiques et sur mesure</b> pour votre entreprise.</p>
+      <p class="hero__sub" data-reveal style="--d:.2s">Chaque vignette ci-dessous est un extrait réel, en ligne, à tester en trente secondes. Retournez la carte pour voir comment il est fait.</p>
+      <div class="hero__actions" data-reveal style="--d:.24s">
+        <a class="pill pill--blanc" href="#modules">Voir les modules</a>
+      </div>
+    </div>
+
+    <div class="hero__hand" data-hand>
+      <button class="hcard hcard--1" type="button" data-goto="villa" aria-label="Aller au module : Visitez une villa en 3D">
+        <video muted loop playsinline autoplay preload="metadata" poster="assets/poster-villa.jpg" src="assets/prev-villa.mp4"></video>
+        <span class="hcard__label" style="--c:var(--ml-bleu)">3D à explorer</span>
+      </button>
+      <button class="hcard hcard--2" type="button" data-goto="anna-conseils" aria-label="Aller au module : Anna doute, conseillez-la">
+        <video muted loop playsinline autoplay preload="metadata" poster="assets/poster-q1.jpg" src="assets/v-q1.mp4"></video>
+        <span class="hcard__label" style="--c:var(--ml-prune)">Vidéo</span>
+      </button>
+      <button class="hcard hcard--3" type="button" data-goto="lisa-intro" aria-label="Aller au module : Lisa vous accueille dans le module">
+        <video muted loop playsinline autoplay preload="metadata" poster="assets/poster-lisa-intro.jpg" src="assets/v-lisa-intro.mp4"></video>
+        <span class="hcard__label" style="--c:var(--ml-prune)">Vidéo</span>
+      </button>
+      <button class="hcard hcard--4" type="button" data-goto="lisa-facetime" aria-label="Aller au module : Lisa vous appelle en vidéo">
+        <video muted loop playsinline autoplay preload="metadata" poster="assets/poster-facetime.jpg" src="assets/v-facetime.mp4"></video>
+        <span class="hcard__label" style="--c:var(--ml-prune)">Vidéo</span>
+      </button>
+      <button class="hcard hcard--5" type="button" data-goto="bague" aria-label="Aller au module : De l'atelier à ta bague unique">
+        <video muted loop playsinline autoplay preload="metadata" poster="assets/poster-bague.jpg" src="assets/prev-bague.mp4"></video>
+        <span class="hcard__label" style="--c:var(--ml-violet)">Jeu et défi</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================ CARTES ============================ -->
+<section class="deck" id="modules">
+  <div class="deck__in">
+    <div class="deck__head" data-reveal>
+      <p class="kicker kicker--violet">Exemples de modules</p>
+      <h2>Seize extraits de modules, à tester</h2>
+      <p class="lead">Pas de module complet à parcourir : un extrait, une idée, trente secondes. Survolez pour l'aperçu, <b>Consulter</b> pour tester, <b>Retourner</b> pour voir comment c'est fait.</p>
+    </div>
+
+    <div class="filters" role="tablist" aria-label="Types de modules" data-filters>
+      <button class="chip is-on" role="tab" aria-selected="true" data-filter="all">Tous <span data-count="all"></span></button>
+      <button class="chip" role="tab" aria-selected="false" data-filter="conversation" style="--c:var(--ml-rouge)"><i></i>Simulation de conversation</button>
+      <button class="chip" role="tab" aria-selected="false" data-filter="video" style="--c:var(--ml-prune)"><i></i>Vidéo</button>
+      <button class="chip" role="tab" aria-selected="false" data-filter="jeu" style="--c:var(--ml-violet)"><i></i>Jeu et défi</button>
+      <button class="chip" role="tab" aria-selected="false" data-filter="3d" style="--c:var(--ml-bleu)"><i></i>3D à explorer</button>
+      <button class="chip" role="tab" aria-selected="false" data-filter="micro" style="--c:var(--ml-rose)"><i></i>Micro-activité</button>
+    </div>
+    <div class="filters filters--public" role="tablist" aria-label="Public" data-filters-public>
+      <span class="filters__label">Public</span>
+      <button class="chip chip--small is-on" role="tab" aria-selected="true" data-public="all">Tous</button>
+      <button class="chip chip--small" role="tab" aria-selected="false" data-public="salaries">Salariés et agents</button>
+      <button class="chip chip--small" role="tab" aria-selected="false" data-public="entrepreneurs">Créateurs d'entreprise</button>
+      <button class="chip chip--small" role="tab" aria-selected="false" data-public="lyceens">Lycéens</button>
+      <button class="chip chip--small" role="tab" aria-selected="false" data-public="etudiants">Étudiants</button>
+      <button class="chip chip--small" role="tab" aria-selected="false" data-public="grand-public">Grand public</button>
+      <button class="chip chip--small" role="tab" aria-selected="false" data-public="enfants">Enfants et collégiens</button>
+    </div>
+
+    <div class="grid" data-grid>
+
+      <article class="card" data-card data-fam="video" data-id="lisa-intro" data-public="lyceens" data-title="Lisa vous accueille dans le module" data-src="assets/lisa-intro-son.mp4" data-kind="video" data-reveal>
+        <div class="card__inner">
+          <div class="card__face card__front">
+            <div class="card__media">
+              <video muted loop playsinline preload="metadata" poster="assets/poster-lisa-intro.jpg" src="assets/v-lisa-intro.mp4"></video>
+              <span class="tag tag--fam">Vidéo</span>
+              <span class="tag tag--time">27 s</span>
+              <span class="stamp" aria-hidden="true">Consulté</span>
+            </div>
+            <div class="card__body">
+              <h3>Lisa vous accueille dans le module</h3>
+              <p>Lisa se présente et annonce ce qui attend l&#x27;apprenant.</p>
+              <dl class="fiche"><div><dt>Public&nbsp;:</dt> <dd>Lycéens de terminale</dd></div><div><dt>Sujet&nbsp;:</dt> <dd>Orientation post-bac</dd></div><div><dt>Type&nbsp;:</dt> <dd>Vidéo</dd></div></dl>
+              <ul class="meta"><li>Vidéo</li><li>Genially</li></ul>
+              <div class="card__actions">
+                <button class="pill pill--rouge" type="button" data-play>Voir la vidéo</button>
+                <button class="pill pill--ghost" type="button" data-flip>Retourner</button>
+              </div>
+            </div>
+          </div>
+          <div class="card__face card__back">
+            <button class="back__close" type="button" data-flip aria-label="Revenir au recto">↺ Recto</button>
+            <p class="back__label">Le contexte</p>
+            <p>Un parcours de sensibilisation à l&#x27;orientation, pour aider les élèves de terminale à comprendre et utiliser Parcoursup.</p>
+            <h3>Lisa, la meilleure copine de l&#x27;apprenant</h3><p>Une lycéenne conçue avec l&#x27;entreprise, qui accompagne l&#x27;élève tout au long du parcours.</p>
+            <p class="back__label">L'activité</p>
+            <p>Une vidéo d&#x27;accueil face caméra, avec synchronisation labiale, pour lancer le parcours.</p>
+            <p class="ludic"><span class="back__label">Ludicité</span><span class="ludic__stars" aria-label="2 sur 5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span> <b>Accueil narratif</b></p>
+            <p class="back__label">Comment nous l&#39;avons conçu</p>
+            <p>Lisa dessinée et validée avec l&#x27;entreprise, voix IA choisie ensemble, texte écrit pour l&#x27;oral, puis animation vidéo avec synchronisation labiale.</p>
+            <p class="card__back-int"><b>Idéal pour :</b> Orientation, préparation à Parcoursup.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-card data-fam="3d" data-id="villa" data-public="salaries" data-title="Visitez une villa en 3D" data-src="https://meujesse.github.io/robot-3d/villa/v2/" data-reveal>
+        <div class="card__inner">
+          <div class="card__face card__front">
+            <div class="card__media">
+              <video muted loop playsinline preload="metadata" poster="assets/poster-villa.jpg" src="assets/prev-villa.mp4"></video>
+              <span class="tag tag--fam">3D à explorer</span>
+              <span class="tag tag--time">≈ 2 min</span>
+              <span class="stamp" aria-hidden="true">Consulté</span>
+            </div>
+            <div class="card__body">
+              <h3>Visitez une villa en 3D</h3>
+              <p>On explore la villa pièce par pièce, puis on réussit la photo parfaite.</p>
+              <dl class="fiche"><div><dt>Public&nbsp;:</dt> <dd>Photographes immobiliers</dd></div><div><dt>Sujet&nbsp;:</dt> <dd>Photographier un bien de luxe</dd></div><div><dt>Type&nbsp;:</dt> <dd>3D à explorer</dd></div></dl>
+              <ul class="meta"><li>3D</li><li>Page web</li></ul>
+              <div class="card__actions">
+                <button class="pill pill--rouge" type="button" data-play>Consulter</button>
+                <button class="pill pill--ghost" type="button" data-flip>Retourner</button>
+              </div>
+            </div>
+          </div>
+          <div class="card__face card__back">
+            <button class="back__close" type="button" data-flip aria-label="Revenir au recto">↺ Recto</button>
+            <p class="back__label">Le contexte</p>
+            <p>Une formation pour photographes immobiliers de luxe : apprendre à mettre en valeur un bien avant la séance photo.</p>
+            <h3>Alice, l&#x27;agente immobilière</h3><p>Elle commente la visite avec sa voix. On active ou on désactive sa présence.</p>
+            <p class="back__label">L'activité</p>
+            <p>Plusieurs vues : maquette, plan, plan holo, quartier. Puis le mode photo note le cliché sur cent.</p>
+            <p class="ludic"><span class="back__label">Ludicité</span><span class="ludic__stars" aria-label="4 sur 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span> <b>Découverte active et défi</b></p>
+            <p class="back__label">Comment nous l&#39;avons conçu</p>
+            <p>Chaque pièce construite sur mesure, meubles modélisés en 3D par l&#x27;IA, points d&#x27;intérêt et notation de la photo codés à la main.</p>
+            <p class="card__back-int"><b>Idéal pour :</b> Photo immobilière, agents immobiliers, architecture.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-card data-fam="jeu" data-id="bague" data-public="enfants" data-title="De l&#x27;atelier à ta bague unique" data-src="https://view.genially.com/6aa7f1151312512a6cf14eac" data-reveal>
+        <div class="card__inner">
+          <div class="card__face card__front">
+            <div class="card__media">
+              <video muted loop playsinline preload="metadata" poster="assets/poster-bague.jpg" src="assets/prev-bague.mp4"></video>
+              <span class="tag tag--fam">Jeu et défi</span>
+              <span class="tag tag--time">≈ 10 min</span>
+              <span class="stamp" aria-hidden="true">Consulté</span>
+            </div>
+            <div class="card__body">
+              <h3>De l&#x27;atelier à ta bague unique</h3>
+              <p>On fabrique sa première bague geste par geste, puis on crée la sienne.</p>
+              <dl class="fiche"><div><dt>Public&nbsp;:</dt> <dd>Collégiens</dd></div><div><dt>Sujet&nbsp;:</dt> <dd>Métiers de la bijouterie</dd></div><div><dt>Type&nbsp;:</dt> <dd>Activité interactive</dd></div></dl>
+              <ul class="meta"><li>Genially</li><li>3D</li></ul>
+              <div class="card__actions">
+                <button class="pill pill--rouge" type="button" data-play>Consulter</button>
+                <button class="pill pill--ghost" type="button" data-flip>Retourner</button>
+              </div>
+            </div>
+          </div>
+          <div class="card__face card__back">
+            <button class="back__close" type="button" data-flip aria-label="Revenir au recto">↺ Recto</button>
+            <p class="back__label">Le contexte</p>
+            <p>Un projet de découverte des métiers d&#x27;art pour des collégiens, pour leur donner envie de pousser la porte d&#x27;un atelier.</p>
+            <h3>Julie, l&#x27;apprentie bijoutière</h3><p>Une collégienne qui commente chaque geste avec sa voix.</p>
+            <p class="back__label">L'activité</p>
+            <p>Glisser les outils sur l&#x27;établi dans le bon ordre, puis choisir métal, pierres et serti. La bague apparaît en 3D.</p>
+            <p class="ludic"><span class="back__label">Ludicité</span><span class="ludic__stars" aria-label="5 sur 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span> <b>Jeu</b></p>
+            <p class="back__label">Comment nous l&#39;avons conçu</p>
+            <p>Genially pour le parcours, pages HTML pour l&#x27;établi, bague calculée en 3D en direct, Julie illustrée et doublée par une voix IA.</p>
+            <p class="card__back-int"><b>Idéal pour :</b> Métiers de l&#x27;artisanat, orientation au collège.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-card data-fam="3d" data-id="bouche" data-public="etudiants" data-title="La bouche en 3D, dent par dent" data-src="https://meujesse.github.io/robot-3d/bouche/" data-reveal>
+        <div class="card__inner">
+          <div class="card__face card__front">
+            <div class="card__media">
+              <video muted loop playsinline preload="metadata" poster="assets/poster-bouche.jpg" src="assets/prev-bouche.mp4"></video>
+              <span class="tag tag--fam">3D à explorer</span>
+              <span class="tag tag--time">≈ 2 min</span>
+              <span class="stamp" aria-hidden="true">Consulté</span>
+            </div>
+            <div class="card__body">
+              <h3>La bouche en 3D, dent par dent</h3>
+              <p>Isoler une dent, voir son numéro et passer en vue radio.</p>
+              <dl class="fiche"><div><dt>Public&nbsp;:</dt> <dd>Secrétariat médical</dd></div><div><dt>Sujet&nbsp;:</dt> <dd>Anatomie dentaire</dd></div><div><dt>Type&nbsp;:</dt> <dd>3D à explorer</dd></div></dl>
+              <ul class="meta"><li>3D</li><li>Page web</li></ul>
+              <div class="card__actions">
+                <button class="pill pill--rouge" type="button" data-play>Consulter</button>
+                <button class="pill pill--ghost" type="button" data-flip>Retourner</button>
+              </div>
+            </div>
+          </div>
+          <div class="card__face card__back">
+            <button class="back__close" type="button" data-flip aria-label="Revenir au recto">↺ Recto</button>
+            <p class="back__label">Le contexte</p>
+            <p>Une formation de secrétaires médicales en apprentissage, qui doivent situer et nommer les dents avec un praticien.</p>
+            <h3>L'objet en 3D</h3><p>Ici, c'est l'objet lui-même qui guide l'apprenant.</p>
+            <p class="back__label">L'activité</p>
+            <p>On tourne autour des arcades, on sort une dent et on affiche sa numérotation. But : situer et nommer chaque dent.</p>
+            <p class="ludic"><span class="back__label">Ludicité</span><span class="ludic__stars" aria-label="3 sur 5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span> <b>Découverte active</b></p>
+            <p class="back__label">Comment nous l&#39;avons conçu</p>
+            <p>Chaque type de dent modélisé par l&#x27;IA, découpé en émail, dentine et pulpe, numérotation internationale vérifiée.</p>
+            <p class="card__back-int"><b>Idéal pour :</b> Secrétariat médical, assistance dentaire.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-card data-fam="video" data-id="anna-conseils" data-public="entrepreneurs" data-title="Anna doute, conseillez-la" data-src="https://meujesse.github.io/devenir-entrepreneur/anna-conseils.html" data-reveal>
+        <div class="card__inner">
+          <div class="card__face card__front">
+            <div class="card__media">
+              <video muted loop playsinline preload="metadata" poster="assets/poster-q1.jpg" src="assets/v-q1.mp4"></video>
+              <span class="tag tag--fam">Vidéo</span>
+              <span class="tag tag--time">≈ 1 min</span>
+              <span class="stamp" aria-hidden="true">Consulté</span>
+            </div>
+            <div class="card__body">
+              <h3>Anna doute, conseillez-la</h3>
+              <p>Anna confie ses doutes, l&#x27;apprenant choisit le bon conseil.</p>
+              <dl class="fiche"><div><dt>Public&nbsp;:</dt> <dd>Créateurs d&#x27;entreprise</dd></div><div><dt>Sujet&nbsp;:</dt> <dd>Vision et valeurs</dd></div><div><dt>Type&nbsp;:</dt> <dd>Vidéo interactive</dd></div></dl>
+              <ul class="meta"><li>Vidéo</li><li>Genially</li></ul>
+              <div class="card__actions">
+                <button class="pill pill--rouge" type="button" data-play>Consulter</button>
+                <button class="pill pill--ghost" type="button" data-flip>Retourner</button>
+              </div>
+            </div>
+          </div>
+          <div class="card__face card__back">
+            <button class="back__close" type="button" data-flip aria-label="Revenir au recto">↺ Recto</button>
+            <p class="back__label">Le contexte</p>
+            <p>Un module sur la création d&#x27;entreprise : comprendre pourquoi se lancer, avec ses valeurs, sa vision et sa discipline.</p>
+            <h3>Anna, l&#x27;entrepreneuse qui doute</h3><p>Une jeune créatrice d&#x27;entreprise qui vit les mêmes doutes que l&#x27;apprenant.</p>
+            <p class="back__label">L'activité</p>
+            <p>Trois doutes, trois conseils possibles. Un mauvais conseil déclenche sa réaction en vidéo, puis on réessaie.</p>
+            <p class="ludic"><span class="back__label">Ludicité</span><span class="ludic__stars" aria-label="4 sur 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span> <b>Activité ludique</b></p>
+            <p class="back__label">Comment nous l&#39;avons conçu</p>
+            <p>Anna dessinée dans Canva, voix IA écrite à l&#x27;oral, puis clips vidéo IA qui s&#x27;arrêtent pour attendre la réponse.</p>
+            <p class="card__back-int"><b>Idéal pour :</b> Entrepreneuriat, coaching de porteurs de projet.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-card data-fam="micro" data-id="nuage" data-public="lyceens" data-title="Le nuage de mots" data-src="https://meujesse.github.io/parcoursup-easy/nuage-de-mots.html" data-reveal>
+        <div class="card__inner">
+          <div class="card__face card__front">
+            <div class="card__media">
+              <video muted loop playsinline preload="metadata" poster="assets/shot-nuage.png" src="assets/prev-nuage.mp4"></video>
+              <span class="tag tag--fam">Micro-activité</span>
+              <span class="tag tag--time">≈ 20 s</span>
+              <span class="stamp" aria-hidden="true">Consulté</span>
+            </div>
+            <div class="card__body">
+              <h3>Le nuage de mots</h3>
+              <p>Choisir les trois qualités qui vous ressemblent le plus.</p>
+              <dl class="fiche"><div><dt>Public&nbsp;:</dt> <dd>Lycéens de terminale</dd></div><div><dt>Sujet&nbsp;:</dt> <dd>Se connaître</dd></div><div><dt>Type&nbsp;:</dt> <dd>Activité interactive</dd></div></dl>
+              <ul class="meta"><li>HTML</li><li>Genially</li></ul>
+              <div class="card__actions">
+                <button class="pill pill--rouge" type="button" data-play>Consulter</button>
+                <button class="pill pill--ghost" type="button" data-flip>Retourner</button>
+              </div>
+            </div>
+          </div>
+          <div class="card__face card__back">
+            <button class="back__close" type="button" data-flip aria-label="Revenir au recto">↺ Recto</button>
+            <p class="back__label">Le contexte</p>
+            <p>Le même parcours d&#x27;orientation que Lisa : l&#x27;élève commence par mieux se connaître avant de formuler ses vœux.</p>
+            <h3>Lisa, la meilleure copine de l&#x27;apprenant</h3><p>Une lycéenne conçue avec l&#x27;entreprise, qui accompagne l&#x27;élève tout au long du parcours.</p>
+            <p class="back__label">L'activité</p>
+            <p>Trois clics dans un nuage de qualités. Elles rejoignent le profil de l&#x27;élève pour ses vœux.</p>
+            <p class="ludic"><span class="back__label">Ludicité</span><span class="ludic__stars" aria-label="2 sur 5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span> <b>Découverte active</b></p>
+            <p class="back__label">Comment nous l&#39;avons conçu</p>
+            <p>Une page HTML légère posée dans le Genially, réponses transmises au LMS, mots modifiables par l&#x27;équipe pédagogique.</p>
+            <p class="card__back-int"><b>Idéal pour :</b> Orientation, brise-glace, intégration.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-card data-fam="conversation" data-id="alice-appel" data-public="grand-public" data-title="Alice vous appelle, puis vous écrit" data-src="https://view.genially.com/6aa18578c892a5271702c306?idSlide=cbed1295-391d-4fa5-8daa-6723740a38ca" data-reveal>
+        <div class="card__inner">
+          <div class="card__face card__front">
+            <div class="card__media">
+              <video muted loop playsinline preload="metadata" poster="assets/poster-alice-call.jpg" src="assets/prev-alice-appel.mp4"></video>
+              <span class="tag tag--fam">Simulation de conversation</span>
+              <span class="tag tag--time">≈ 2 min</span>
+              <span class="stamp" aria-hidden="true">Consulté</span>
+            </div>
+            <div class="card__body">
+              <h3>Alice vous appelle, puis vous écrit</h3>
+              <p>On décroche, puis la discussion continue par messages.</p>
+              <dl class="fiche"><div><dt>Public&nbsp;:</dt> <dd>Femmes en couple</dd></div><div><dt>Sujet&nbsp;:</dt> <dd>L&#x27;argent à deux</dd></div><div><dt>Type&nbsp;:</dt> <dd>Simulation de conversation</dd></div></dl>
+              <ul class="meta"><li>Audio</li><li>Genially</li></ul>
+              <div class="card__actions">
+                <button class="pill pill--rouge" type="button" data-play>Consulter</button>
+                <button class="pill pill--ghost" type="button" data-flip>Retourner</button>
+              </div>
+            </div>
+          </div>
+          <div class="card__face card__back">
+            <button class="back__close" type="button" data-flip aria-label="Revenir au recto">↺ Recto</button>
+            <p class="back__label">Le contexte</p>
+            <p>Un programme d&#x27;éducation financière pour les couples : parler d&#x27;argent à deux, fixer des règles, s&#x27;organiser.</p>
+            <h3>Alice, l&#x27;amie qui raconte</h3><p>Elle explique comment elle a mis l&#x27;argent à plat avec son conjoint.</p>
+            <p class="back__label">L'activité</p>
+            <p>On écoute l&#x27;appel, puis on répond dans une messagerie. Alice y explique la méthode des enveloppes.</p>
+            <p class="ludic"><span class="back__label">Ludicité</span><span class="ludic__stars" aria-label="3 sur 5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span> <b>Activité ludique</b></p>
+            <p class="back__label">Comment nous l&#39;avons conçu</p>
+            <p>Écran de téléphone, sonnerie et messagerie construits entièrement dans Genially, voix enregistrée pour l&#x27;appel.</p>
+            <p class="card__back-int"><b>Idéal pour :</b> Éducation financière, banque, accompagnement social.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-card data-fam="3d" data-id="nika" data-public="enfants" data-title="Nika, la robote à explorer" data-src="https://meujesse.github.io/robot-3d/labels.html?perso=nika" data-reveal>
+        <div class="card__inner">
+          <div class="card__face card__front">
+            <div class="card__media">
+              <video muted loop playsinline preload="metadata" poster="assets/poster-nika.jpg" src="assets/prev-nika.mp4"></video>
+              <span class="tag tag--fam">3D à explorer</span>
+              <span class="tag tag--time">≈ 30 s</span>
+              <span class="stamp" aria-hidden="true">Consulté</span>
+            </div>
+            <div class="card__body">
+              <h3>Nika, la robote à explorer</h3>
+              <p>On clique ses points lumineux pour découvrir chacune de ses parties.</p>
+              <dl class="fiche"><div><dt>Public&nbsp;:</dt> <dd>Tous publics</dd></div><div><dt>Sujet&nbsp;:</dt> <dd>Présenter un objet</dd></div><div><dt>Type&nbsp;:</dt> <dd>3D à explorer</dd></div></dl>
+              <ul class="meta"><li>3D</li><li>Genially</li></ul>
+              <div class="card__actions">
+                <button class="pill pill--rouge" type="button" data-play>Consulter</button>
+                <button class="pill pill--ghost" type="button" data-flip>Retourner</button>
+              </div>
+            </div>
+          </div>
+          <div class="card__face card__back">
+            <button class="back__close" type="button" data-flip aria-label="Revenir au recto">↺ Recto</button>
+            <p class="back__label">Le contexte</p>
+            <p>Une démonstration de présentation d&#x27;objet technique : faire découvrir chaque partie d&#x27;un produit sans notice.</p>
+            <h3>Nika, la petite robote</h3><p>Une mascotte volante, avec sa voix et ses réactions au toucher.</p>
+            <p class="back__label">L'activité</p>
+            <p>On la fait tourner et on ouvre les étiquettes : capteur, antenne, turbine, cœur lumineux.</p>
+            <p class="ludic"><span class="back__label">Ludicité</span><span class="ludic__stars" aria-label="3 sur 5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span> <b>Découverte active</b></p>
+            <p class="back__label">Comment nous l&#39;avons conçu</p>
+            <p>Robote imaginée puis modélisée en 3D par l&#x27;IA, étiquettes accrochées au modèle qui suivent sa rotation.</p>
+            <p class="card__back-int"><b>Idéal pour :</b> Présentation de produit, maintenance, sciences.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-card data-fam="video" data-id="lisa-facetime" data-public="lyceens" data-title="Lisa vous appelle en vidéo" data-src="https://meujesse.github.io/parcoursup-easy/facetime-lisa.html" data-reveal>
+        <div class="card__inner">
+          <div class="card__face card__front">
+            <div class="card__media">
+              <video muted loop playsinline preload="metadata" poster="assets/poster-facetime.jpg" src="assets/v-facetime.mp4"></video>
+              <span class="tag tag--fam">Vidéo</span>
+              <span class="tag tag--time">≈ 1 min</span>
+              <span class="stamp" aria-hidden="true">Consulté</span>
+            </div>
+            <div class="card__body">
+              <h3>Lisa vous appelle en vidéo</h3>
+              <p>Un appel vidéo où chaque réponse change la suite.</p>
+              <dl class="fiche"><div><dt>Public&nbsp;:</dt> <dd>Lycéens de terminale</dd></div><div><dt>Sujet&nbsp;:</dt> <dd>Comprendre Parcoursup</dd></div><div><dt>Type&nbsp;:</dt> <dd>Vidéo interactive</dd></div></dl>
+              <ul class="meta"><li>Vidéo</li><li>Genially</li></ul>
+              <div class="card__actions">
+                <button class="pill pill--rouge" type="button" data-play>Consulter</button>
+                <button class="pill pill--ghost" type="button" data-flip>Retourner</button>
+              </div>
+            </div>
+          </div>
+          <div class="card__face card__back">
+            <button class="back__close" type="button" data-flip aria-label="Revenir au recto">↺ Recto</button>
+            <p class="back__label">Le contexte</p>
+            <p>Toujours le parcours d&#x27;orientation : ici, Lisa aide l&#x27;élève à comprendre les chiffres de Parcoursup.</p>
+            <h3>Lisa, la meilleure copine de l&#x27;apprenant</h3><p>Une lycéenne conçue avec l&#x27;entreprise, qui accompagne l&#x27;élève tout au long du parcours.</p>
+            <p class="back__label">L'activité</p>
+            <p>Lisa appelle, pose ses questions, l&#x27;élève choisit ses réponses. Six branches pour une conversation.</p>
+            <p class="ludic"><span class="back__label">Ludicité</span><span class="ludic__stars" aria-label="4 sur 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span> <b>Activité ludique</b></p>
+            <p class="back__label">Comment nous l&#39;avons conçu</p>
+            <p>Arbre de dialogue écrit avant tout, six clips vidéo IA synchronisés sur la voix, interface d&#x27;appel codée sur mesure.</p>
+            <p class="card__back-int"><b>Idéal pour :</b> Orientation, tutorat étudiant.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-card data-fam="conversation" data-id="entretien" data-public="salaries" data-title="Mener un entretien annuel" data-src="https://meujesse-demo-review-conversation.netlify.app" data-reveal>
+        <div class="card__inner">
+          <div class="card__face card__front">
+            <div class="card__media">
+              <video muted loop playsinline preload="metadata" poster="assets/poster-entretien.jpg" src="assets/prev-entretien.mp4"></video>
+              <span class="tag tag--fam">Simulation de conversation</span>
+              <span class="tag tag--time">≈ 5 min</span>
+              <span class="stamp" aria-hidden="true">Consulté</span>
+            </div>
+            <div class="card__body">
+              <h3>Mener un entretien annuel</h3>
+              <p>Un entretien face à un collaborateur dont l&#x27;attitude change selon vos réponses.</p>
+              <dl class="fiche"><div><dt>Public&nbsp;:</dt> <dd>Managers</dd></div><div><dt>Sujet&nbsp;:</dt> <dd>Entretien annuel</dd></div><div><dt>Type&nbsp;:</dt> <dd>Simulation de conversation</dd></div></dl>
+              <ul class="meta"><li>Page web</li><li>SCORM</li></ul>
+              <div class="card__actions">
+                <button class="pill pill--rouge" type="button" data-play>Consulter</button>
+                <button class="pill pill--ghost" type="button" data-flip>Retourner</button>
+              </div>
+            </div>
+          </div>
+          <div class="card__face card__back">
+            <button class="back__close" type="button" data-flip aria-label="Revenir au recto">↺ Recto</button>
+            <p class="back__label">Le contexte</p>
+            <p>Un module pour managers d&#x27;un grand groupe de conseil : préparer et mener l&#x27;entretien annuel de développement.</p>
+            <h3>Maya et Alex</h3><p>Maya, la mentore, conseille. Alex, le collaborateur, réagit à chaque réplique.</p>
+            <p class="back__label">L'activité</p>
+            <p>Onze échanges, trois réponses plausibles à chaque fois, une objection à traiter. Trois fins possibles.</p>
+            <p class="ludic"><span class="back__label">Ludicité</span><span class="ludic__stars" aria-label="4 sur 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span> <b>Simulation</b></p>
+            <p class="back__label">Comment nous l&#39;avons conçu</p>
+            <p>Personnages réalistes générés par l&#x27;IA en gardant le même visage, voix IA, dialogue à embranchements, export SCORM.</p>
+            <p class="card__back-int"><b>Idéal pour :</b> Management, RH, feedback, relation client.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-card data-fam="3d" data-id="ventilateur" data-public="salaries" data-title="Un appareil médical à manipuler" data-src="https://meujesse.github.io/robot-3d/oxylis/" data-reveal>
+        <div class="card__inner">
+          <div class="card__face card__front">
+            <div class="card__media">
+              <video muted loop playsinline preload="metadata" poster="assets/poster-ventilateur.jpg" src="assets/prev-ventilateur.mp4"></video>
+              <span class="tag tag--fam">3D à explorer</span>
+              <span class="tag tag--time">≈ 3 min</span>
+              <span class="stamp" aria-hidden="true">Consulté</span>
+            </div>
+            <div class="card__body">
+              <h3>Un appareil médical à manipuler</h3>
+              <p>Explorer la machine, puis tester son écran dans un simulateur.</p>
+              <dl class="fiche"><div><dt>Public&nbsp;:</dt> <dd>Techniciens</dd></div><div><dt>Sujet&nbsp;:</dt> <dd>Prendre en main un appareil</dd></div><div><dt>Type&nbsp;:</dt> <dd>3D et simulateur</dd></div></dl>
+              <ul class="meta"><li>3D</li><li>Page web</li></ul>
+              <div class="card__actions">
+                <button class="pill pill--rouge" type="button" data-play>Consulter</button>
+                <button class="pill pill--ghost" type="button" data-flip>Retourner</button>
+              </div>
+            </div>
+          </div>
+          <div class="card__face card__back">
+            <button class="back__close" type="button" data-flip aria-label="Revenir au recto">↺ Recto</button>
+            <p class="back__label">Le contexte</p>
+            <p>Une formation produit pour les techniciens qui installent un appareil respiratoire chez les patients.</p>
+            <h3>L'objet en 3D</h3><p>Ici, c'est l'objet lui-même qui guide l'apprenant.</p>
+            <p class="back__label">L'activité</p>
+            <p>Huit zones à cliquer, chacune avec son rôle et son geste. Puis menus et alertes à tester.</p>
+            <p class="ludic"><span class="back__label">Ludicité</span><span class="ludic__stars" aria-label="3 sur 5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span> <b>Simulation</b></p>
+            <p class="back__label">Comment nous l&#39;avons conçu</p>
+            <p>Machine modélisée en 3D par l&#x27;IA d&#x27;après une image, simulateur d&#x27;écran recréé à partir du guide du fabricant.</p>
+            <p class="card__back-int"><b>Idéal pour :</b> Matériel médical, maintenance, formation produit.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-card data-fam="jeu" data-id="plantes" data-public="etudiants" data-title="Reconnaître une plante comme un pro" data-src="https://view.genially.com/6aafd751c51babf1ee25823e" data-reveal>
+        <div class="card__inner">
+          <div class="card__face card__front">
+            <div class="card__media">
+              <video muted loop playsinline preload="metadata" poster="assets/poster-plantes.jpg" src="assets/prev-plantes.mp4"></video>
+              <span class="tag tag--fam">Jeu et défi</span>
+              <span class="tag tag--time">≈ 10 min</span>
+              <span class="stamp" aria-hidden="true">Consulté</span>
+            </div>
+            <div class="card__body">
+              <h3>Reconnaître une plante comme un pro</h3>
+              <p>Indices sur photo, plante en 3D, puis trois défis.</p>
+              <dl class="fiche"><div><dt>Public&nbsp;:</dt> <dd>Lycées agricoles</dd></div><div><dt>Sujet&nbsp;:</dt> <dd>Reconnaître les végétaux</dd></div><div><dt>Type&nbsp;:</dt> <dd>Activité interactive</dd></div></dl>
+              <ul class="meta"><li>Genially</li><li>3D</li></ul>
+              <div class="card__actions">
+                <button class="pill pill--rouge" type="button" data-play>Consulter</button>
+                <button class="pill pill--ghost" type="button" data-flip>Retourner</button>
+              </div>
+            </div>
+          </div>
+          <div class="card__face card__back">
+            <button class="back__close" type="button" data-flip aria-label="Revenir au recto">↺ Recto</button>
+            <p class="back__label">Le contexte</p>
+            <p>Un projet pour les lycées agricoles : apprendre à reconnaître les végétaux comme un professionnel du paysage.</p>
+            <h3>Célian, l&#x27;apprenti paysagiste</h3><p>Un apprenti du même âge que les élèves, qui guide avec sa voix.</p>
+            <p class="back__label">L'activité</p>
+            <p>Trouver les indices, couper un bulbe en 3D, suivre les saisons, puis relier nom commun et nom latin.</p>
+            <p class="ludic"><span class="back__label">Ludicité</span><span class="ludic__stars" aria-label="4 sur 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span> <b>Jeu</b></p>
+            <p class="back__label">Comment nous l&#39;avons conçu</p>
+            <p>Célian créé en 3D stylisée, étude botanique en 3D codée à la main, trois défis construits dans Genially.</p>
+            <p class="card__back-int"><b>Idéal pour :</b> Paysage, horticulture, espaces verts.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-card data-fam="conversation" data-id="anna-bd" data-public="entrepreneurs" data-title="Anna, version bande dessinée" data-src="https://meujesse.github.io/devenir-entrepreneur/anna-rencontre.html" data-reveal>
+        <div class="card__inner">
+          <div class="card__face card__front">
+            <div class="card__media">
+              <video muted loop playsinline preload="metadata" poster="assets/shot-anna-rencontre.png" src="assets/prev-anna-bd.mp4"></video>
+              <span class="tag tag--fam">Simulation de conversation</span>
+              <span class="tag tag--time">≈ 45 s</span>
+              <span class="stamp" aria-hidden="true">Consulté</span>
+            </div>
+            <div class="card__body">
+              <h3>Anna, version bande dessinée</h3>
+              <p>La rencontre avec Anna, en bulles, sans vidéo.</p>
+              <dl class="fiche"><div><dt>Public&nbsp;:</dt> <dd>Créateurs d&#x27;entreprise</dd></div><div><dt>Sujet&nbsp;:</dt> <dd>Présenter son projet</dd></div><div><dt>Type&nbsp;:</dt> <dd>Simulation de conversation</dd></div></dl>
+              <ul class="meta"><li>Animation HTML</li><li>Genially</li></ul>
+              <div class="card__actions">
+                <button class="pill pill--rouge" type="button" data-play>Consulter</button>
+                <button class="pill pill--ghost" type="button" data-flip>Retourner</button>
+              </div>
+            </div>
+          </div>
+          <div class="card__face card__back">
+            <button class="back__close" type="button" data-flip aria-label="Revenir au recto">↺ Recto</button>
+            <p class="back__label">Le contexte</p>
+            <p>Le même module sur la création d&#x27;entreprise, en version légère pour les budgets sans vidéo.</p>
+            <h3>Anna, l&#x27;entrepreneuse qui doute</h3><p>Une jeune créatrice d&#x27;entreprise qui vit les mêmes doutes que l&#x27;apprenant.</p>
+            <p class="back__label">L'activité</p>
+            <p>Anna demande le prénom, réagit aux réponses et fait présenter le projet.</p>
+            <p class="ludic"><span class="back__label">Ludicité</span><span class="ludic__stars" aria-label="2 sur 5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span> <b>Découverte active</b></p>
+            <p class="back__label">Comment nous l&#39;avons conçu</p>
+            <p>Une seule illustration d&#x27;Anna, bouche redessinée image par image sur le texte, clignement et respiration.</p>
+            <p class="card__back-int"><b>Idéal pour :</b> Accueil de parcours, entrepreneuriat.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-card data-fam="3d" data-id="foudre" data-public="salaries" data-title="Le trajet de la foudre" data-src="https://meujesse.github.io/robot-3d/indelec/" data-reveal>
+        <div class="card__inner">
+          <div class="card__face card__front">
+            <div class="card__media">
+              <video muted loop playsinline preload="metadata" poster="assets/poster-foudre.jpg" src="assets/prev-foudre.mp4"></video>
+              <span class="tag tag--fam">3D à explorer</span>
+              <span class="tag tag--time">≈ 2 min</span>
+              <span class="stamp" aria-hidden="true">Consulté</span>
+            </div>
+            <div class="card__body">
+              <h3>Le trajet de la foudre</h3>
+              <p>On déclenche un coup de foudre et on suit le courant jusqu&#x27;à la terre.</p>
+              <dl class="fiche"><div><dt>Public&nbsp;:</dt> <dd>Techniciens</dd></div><div><dt>Sujet&nbsp;:</dt> <dd>Protection contre la foudre</dd></div><div><dt>Type&nbsp;:</dt> <dd>3D à explorer</dd></div></dl>
+              <ul class="meta"><li>3D</li><li>Page web</li></ul>
+              <div class="card__actions">
+                <button class="pill pill--rouge" type="button" data-play>Consulter</button>
+                <button class="pill pill--ghost" type="button" data-flip>Retourner</button>
+              </div>
+            </div>
+          </div>
+          <div class="card__face card__back">
+            <button class="back__close" type="button" data-flip aria-label="Revenir au recto">↺ Recto</button>
+            <p class="back__label">Le contexte</p>
+            <p>Une formation pour techniciens installateurs de paratonnerres : comprendre le rôle de chaque élément du système.</p>
+            <h3>L'objet en 3D</h3><p>Ici, c'est l'objet lui-même qui guide l'apprenant.</p>
+            <p class="back__label">L'activité</p>
+            <p>Huit éléments à explorer, puis un éclair qui parcourt les conducteurs.</p>
+            <p class="ludic"><span class="back__label">Ludicité</span><span class="ludic__stars" aria-label="3 sur 5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span> <b>Découverte active</b></p>
+            <p class="back__label">Comment nous l&#39;avons conçu</p>
+            <p>Bâtiment modélisé par l&#x27;IA, installation dessinée en 3D d&#x27;après les règles de pose, éclair animé le long des conducteurs.</p>
+            <p class="card__back-int"><b>Idéal pour :</b> Électricité, sécurité, maintenance.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-card data-fam="conversation" data-id="lisa-regard" data-public="lyceens" data-title="Lisa vous suit du regard" data-src="https://meujesse.github.io/parcoursup-easy/intro-conversation-v2.html" data-reveal>
+        <div class="card__inner">
+          <div class="card__face card__front">
+            <div class="card__media">
+              <video muted loop playsinline preload="metadata" poster="assets/shot-lisa-bd.png" src="assets/prev-lisa-regard.mp4"></video>
+              <span class="tag tag--fam">Simulation de conversation</span>
+              <span class="tag tag--time">≈ 1 min</span>
+              <span class="stamp" aria-hidden="true">Consulté</span>
+            </div>
+            <div class="card__body">
+              <h3>Lisa vous suit du regard</h3>
+              <p>Lisa cligne des yeux, respire et suit votre souris.</p>
+              <dl class="fiche"><div><dt>Public&nbsp;:</dt> <dd>Lycéens de terminale</dd></div><div><dt>Sujet&nbsp;:</dt> <dd>Premier contact</dd></div><div><dt>Type&nbsp;:</dt> <dd>Simulation de conversation</dd></div></dl>
+              <ul class="meta"><li>Animation HTML</li><li>Genially</li></ul>
+              <div class="card__actions">
+                <button class="pill pill--rouge" type="button" data-play>Consulter</button>
+                <button class="pill pill--ghost" type="button" data-flip>Retourner</button>
+              </div>
+            </div>
+          </div>
+          <div class="card__face card__back">
+            <button class="back__close" type="button" data-flip aria-label="Revenir au recto">↺ Recto</button>
+            <p class="back__label">Le contexte</p>
+            <p>Toujours le parcours d&#x27;orientation : c&#x27;est la toute première rencontre entre l&#x27;élève et Lisa.</p>
+            <h3>Lisa, la meilleure copine de l&#x27;apprenant</h3><p>Une lycéenne conçue avec l&#x27;entreprise, qui accompagne l&#x27;élève tout au long du parcours.</p>
+            <p class="back__label">L'activité</p>
+            <p>Lisa demande le prénom, puis l&#x27;élève choisit ses réponses dans des bulles.</p>
+            <p class="ludic"><span class="back__label">Ludicité</span><span class="ludic__stars" aria-label="2 sur 5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span> <b>Découverte active</b></p>
+            <p class="back__label">Comment nous l&#39;avons conçu</p>
+            <p>Lisa illustrée, animée en direct dans la page : regard qui suit la souris, bouche calée sur les syllabes.</p>
+            <p class="card__back-int"><b>Idéal pour :</b> Orientation, accueil de parcours.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-card data-fam="3d" data-id="dragon" data-public="enfants" data-title="Un dragon à apprivoiser" data-src="https://meujesse.github.io/robot-3d/creature.html" data-reveal>
+        <div class="card__inner">
+          <div class="card__face card__front">
+            <div class="card__media">
+              <video muted loop playsinline preload="metadata" poster="assets/poster-dragon.jpg" src="assets/prev-dragon.mp4"></video>
+              <span class="tag tag--fam">3D à explorer</span>
+              <span class="tag tag--time">≈ 30 s</span>
+              <span class="stamp" aria-hidden="true">Consulté</span>
+            </div>
+            <div class="card__body">
+              <h3>Un dragon à apprivoiser</h3>
+              <p>Il vole, crache du feu et salue au clic.</p>
+              <dl class="fiche"><div><dt>Public&nbsp;:</dt> <dd>Enfants</dd></div><div><dt>Sujet&nbsp;:</dt> <dd>Mascotte de module</dd></div><div><dt>Type&nbsp;:</dt> <dd>Personnage 3D</dd></div></dl>
+              <ul class="meta"><li>3D</li><li>Genially</li></ul>
+              <div class="card__actions">
+                <button class="pill pill--rouge" type="button" data-play>Consulter</button>
+                <button class="pill pill--ghost" type="button" data-flip>Retourner</button>
+              </div>
+            </div>
+          </div>
+          <div class="card__face card__back">
+            <button class="back__close" type="button" data-flip aria-label="Revenir au recto">↺ Recto</button>
+            <p class="back__label">Le contexte</p>
+            <p>Une mascotte pour les parcours destinés aux enfants : elle réagit aux bonnes réponses et rythme le module.</p>
+            <h3>Le dragon, mascotte</h3><p>Quinze animations pour fêter les bonnes réponses.</p>
+            <p class="back__label">L'activité</p>
+            <p>On le fait voler, rugir ou saluer. Dans un module, il réagit aux réponses.</p>
+            <p class="ludic"><span class="back__label">Ludicité</span><span class="ludic__stars" aria-label="3 sur 5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span> <b>Activité ludique</b></p>
+            <p class="back__label">Comment nous l&#39;avons conçu</p>
+            <p>Dragon modélisé par parties en 3D par l&#x27;IA, doté d&#x27;un squelette pour quinze animations, feu en particules.</p>
+            <p class="card__back-int"><b>Idéal pour :</b> Primaire, périscolaire, musées.</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="deck__empty" data-empty hidden>Aucun exemple dans cette catégorie pour l'instant.</p>
+  </div>
+</section>
+
+
+<!-- ============================ TÉMOIGNAGES ============================ -->
+<section class="proof" id="temoignages">
+  <div class="proof__in">
+    <div class="proof__head" data-reveal>
+      <p class="kicker">Ils en parlent</p>
+      <h2>Ce que disent les clients qui ont travaillé avec nous</h2>
+    </div>
+    <div class="quotes">
+      <figure class="quote" data-reveal>
+        <blockquote>Jyn est une personne qui comprend vite. Elle fait partie de ces personnes qui vous posent les questions intelligentes après un brief. On sent le métier et la réflexion lorsqu'on discute des projets et des outils.</blockquote>
+        <figcaption><img src="assets/logo-eduservices.png" alt=""><span>Eduservices</span></figcaption>
+      </figure>
+      <figure class="quote" data-reveal style="--d:.08s">
+        <blockquote>Très satisfait de ta prestation ! On te recommande à 100 %. Point hyper positif : ta communication et ta transparence !</blockquote>
+        <figcaption><img src="assets/logo-cultura.png" alt=""><span>Cultura</span></figcaption>
+      </figure>
+      <figure class="quote" data-reveal style="--d:.16s">
+        <blockquote>J'ai été une cliente exigeante qui avait des idées arrêtées et besoin de peaufinage, encore et encore, et Jyn a su répondre avec bienveillance et patience à toutes mes demandes. Je ne peux que recommander Jyn pour vos projets d'e-learning.</blockquote>
+        <figcaption><span>Sophie Viguier, correctrice</span></figcaption>
+      </figure>
+      <figure class="quote" data-reveal style="--d:.24s">
+        <blockquote>De par son expertise et sa pédagogie, elle assure un transfert de connaissances très apprécié, notamment via la gamification, sujet qu'elle maîtrise parfaitement ! Chez Genially, nous avons une entière confiance en Jyn et en son expertise.</blockquote>
+        <figcaption><img src="assets/logo-genially-amb.png" alt=""><span>Genially</span></figcaption>
+      </figure>
+    </div>
+    <p class="proof__trust" data-reveal><a href="https://fr.trustpilot.com/review/meujesselearning.com" target="_blank" rel="noopener">Note Trustpilot : 4,5 / 5</a></p>
+  </div>
+</section>
+
+<!-- ============================ COULISSES ============================ -->
+<section class="process" id="methode">
+  <div class="process__in">
+    <div class="process__head" data-reveal>
+      <p class="kicker kicker--violet">La méthode</p>
+      <h2>La méthode que l'on utilise pour assurer la qualité de nos modules</h2>
+      <p class="lead">Nous pouvons prendre en charge l'ensemble des étapes ou seulement une partie, en fonction de vos besoins. En quelques mots : nous analysons et structurons en profondeur pour cadrer le projet, puis nous passons à l'opérationnel pour construire un module qui captivera vos apprenants.</p>
+    </div>
+    <div class="addie" data-addie data-reveal>
+          <p class="addie__hint"><i>?</i> Cliquez sur une étape du parcours pour en savoir plus.</p>
+          <div class="addie__board">
+            <svg class="addie__path" viewBox="0 0 1000 240" preserveAspectRatio="none" aria-hidden="true"><path class="track" d="M60 163 C 160 163, 200 77, 280 77 S 420 163, 500 163 S 640 77, 720 77 S 860 163, 940 163"/><path class="done" pathLength="100" d="M60 163 C 160 163, 200 77, 280 77 S 420 163, 500 163 S 640 77, 720 77 S 860 163, 940 163"/></svg>
+            <button class="addie__node" type="button" data-step="0" style="--x:6%;--y:68%;--c:var(--ml-jaune)"><span class="addie__hex">1</span><span class="addie__label">Analyse</span></button><button class="addie__node" type="button" data-step="1" style="--x:28%;--y:32%;--c:var(--ml-bleu)"><span class="addie__hex">2</span><span class="addie__label">Conception</span></button><button class="addie__node" type="button" data-step="2" style="--x:50%;--y:68%;--c:var(--ml-violet)"><span class="addie__hex">3</span><span class="addie__label">Développement</span></button><button class="addie__node" type="button" data-step="3" style="--x:72%;--y:32%;--c:var(--ml-prune)"><span class="addie__hex">4</span><span class="addie__label">Implémentation</span></button><button class="addie__node" type="button" data-step="4" style="--x:94%;--y:68%;--c:var(--ml-rouge)"><span class="addie__hex">5</span><span class="addie__label">Évaluation</span></button>
+          </div>
+          <div class="addie__detail"><div class="addie__card" data-panel="0" style="--c:var(--ml-jaune)"><div class="num">1</div><div><h3>Analyse</h3><p class="lead">Comprendre et identifier vos besoins, vos objectifs pédagogiques et le profil de vos apprenants.</p><ul class="chevlist"><li>Définir les objectifs pédagogiques</li><li>Comprendre vos besoins et le profil de vos apprenants</li></ul><span class="addie__result">→ Des bases solides avant toute création.</span><div class="addie__nav"><span class="addie__count">Étape 1 sur 5</span><button class="pill pill--ghost addie__btn" type="button" data-addie-next>Étape suivante →</button></div></div></div><div class="addie__card" data-panel="1" style="--c:var(--ml-bleu)"><div class="num">2</div><div><h3>Conception</h3><p class="lead">Élaborer les scénarios pédagogiques, structurer le parcours, imaginer les activités ludiques et rédiger les storyboards.</p><ul class="chevlist"><li>Élaborer les scénarios pédagogiques et les storyboards</li><li>Construire la structure du parcours apprenant</li><li>Imaginer les activités ludiques et les idées de gamification</li></ul><span class="addie__result">→ Le fil conducteur, le ton et les interactivités sont pensés pour servir vos objectifs.</span><div class="addie__nav"><span class="addie__count">Étape 2 sur 5</span><button class="pill pill--ghost addie__btn" type="button" data-addie-next>Étape suivante →</button></div></div></div><div class="addie__card" data-panel="2" style="--c:var(--ml-violet)"><div class="num">3</div><div><h3>Développement</h3><p class="lead">Créer et produire les contenus, puis intégrer les modules dans l'outil auteur choisi.</p><ul class="chevlist"><li>Produire les textes, visuels, animations et voix off</li><li>Développer les modules e-learning sur l'outil choisi</li><li>Traduire les idées de gamification en mécaniques de jeu dans le module</li></ul><span class="addie__result">→ Le module prend vie.</span><div class="addie__nav"><span class="addie__count">Étape 3 sur 5</span><button class="pill pill--ghost addie__btn" type="button" data-addie-next>Étape suivante →</button></div></div></div><div class="addie__card" data-panel="3" style="--c:var(--ml-prune)"><div class="num">4</div><div><h3>Implémentation</h3><p class="lead">Tester les modules, les mettre en ligne et configurer le LMS si besoin.</p><ul class="chevlist"><li>Tester les modules : bêta-tests, accessibilité et fonctionnement</li><li>Mettre en ligne les modules et configurer le LMS</li></ul><span class="addie__result">→ Une diffusion conforme à votre environnement de formation.</span><div class="addie__nav"><span class="addie__count">Étape 4 sur 5</span><button class="pill pill--ghost addie__btn" type="button" data-addie-next>Étape suivante →</button></div></div></div><div class="addie__card" data-panel="4" style="--c:var(--ml-rouge)"><div class="num">5</div><div><h3>Évaluation</h3><p class="lead">Après le projet : mesurer les résultats et vous accompagner dans la durée.</p><ul class="chevlist"><li>Collecter les retours des utilisateurs</li><li>Suivre les indicateurs de réussite et l'atteinte des objectifs</li><li>Accompagner après la livraison pour les petites modifications ou corrections</li></ul><span class="addie__result">→ Un impact durable sur vos apprenants, et des parcours qui s'améliorent en continu.</span><div class="addie__nav"><span class="addie__count">Étape 5 sur 5</span><button class="pill pill--ghost addie__btn" type="button" data-addie-next>Revenir à l'analyse ↺</button></div></div></div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================ FAQ ============================ -->
+<section class="faq" id="faq">
+  <div class="faq__in">
+    <div class="faq__head" data-reveal>
+      <p class="kicker kicker--violet">FAQ</p>
+      <h2>Vos questions</h2>
+    </div>
+    <div class="faq__list" data-reveal>
+      <details>
+        <summary>Dans quel format le module est-il livré ?</summary>
+        <p>Dans celui qui correspond à votre outil : un module Genially, un paquet SCORM pour votre plateforme, ou une page web autonome. On le décide ensemble au cadrage, en fonction de ce que vos apprenants utilisent déjà.</p>
+      </details>
+      <details>
+        <summary>Faut-il fournir le contenu ?</summary>
+        <p>Oui pour l'expertise métier : vos supports existants, vos experts, vos contraintes. La transformation en scénario, personnages, activités et vidéos, c'est mon travail.</p>
+      </details>
+      <details>
+        <summary>Les personnages et les voix, comment ça marche ?</summary>
+        <p>Des personnages dessinés pour votre public, animés, avec des voix de synthèse choisies et validées avec vous. Aucun tournage, aucune journée de studio, sauf si vous le préférez.</p>
+      </details>
+      <details>
+        <summary>Travaillez-vous uniquement avec des voix et des images générées par l'IA ?</summary>
+        <p>Non. Nous nous adaptons à votre demande. Si vous préférez que nous travaillions avec un studio de tournage, un studio d'animation ou des monteurs vidéo professionnels, c'est tout à fait possible : on se cale sur vos souhaits. Le budget est alors ajusté en conséquence, et on vous le présente clairement avant de commencer.</p>
+      </details>
+      <details>
+        <summary>Est-ce que les résultats remontent dans notre LMS ?</summary>
+        <p>Oui, en principe des données remontent. Leur type et leur quantité dépendent de trois choses : le LMS que vous utilisez, la version du SCORM (1.2 ou 2004) et les possibilités de l'outil auteur retenu. On vérifie tout cela ensemble dès le cadrage.</p>
+      </details>
+      <details>
+        <summary>Combien de temps ça prend ?</summary>
+        <p>Cela dépend de la longueur du module et du nombre d'activités, et se fixe au cadrage. Le scénario est validé sur papier avant toute production, ce qui évite les allers-retours coûteux en fin de projet.</p>
+      </details>
+      <details>
+        <summary>À qui appartient le module une fois livré ?</summary>
+        <p>À vous. Vous pouvez l'héberger, le modifier et le faire évoluer. Et je reste disponible après la livraison.</p>
+      </details>
+      <details>
+        <summary>Comment on démarre ?</summary>
+        <p>Par un appel, sans engagement, pour parler de votre contenu, de votre public et de ce qu'on pourrait en faire. Prenez un créneau dans l'agenda en bas de page, ou écrivez-moi.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CONTACT ============================ -->
+<section class="contact" id="contact">
+  <div class="contact__in">
+    <div class="contact__text" data-reveal>
+      <img class="contact__portrait" src="assets/jyn-portrait-rond.png" alt="Jyn Chérèze">
+      <h2 data-contact-title>Vous voulez ça pour vos apprenants&nbsp;?</h2>
+      <p data-contact-sub>Prenez un appel avec moi pour parler de votre contenu, de votre public et de ce qu'on pourrait en faire. Sans engagement.</p>
+      <p class="contact__mail">Vous préférez écrire&nbsp;? <a href="mailto:contact@meujesselearning.com?subject=Un%20module%20e-learning%20pour%20mes%20apprenants">contact@meujesselearning.com</a></p>
+      <p class="contact__trust"><a href="https://fr.trustpilot.com/review/meujesselearning.com" target="_blank" rel="noopener">4,5 / 5 sur Trustpilot</a> · Agence Digital Learning</p>
+    </div>
+    <div class="contact__cal" data-reveal style="--d:.1s">
+      <div class="contact__cal-box">
+        <iframe title="Prendre un appel avec Jyn Chérèze" data-src="https://calendly.com/jyn-chereze/decouverte?embed_type=Inline&hide_gdpr_banner=1&hide_event_type_details=1&primary_color=e4003a&text_color=230000" loading="lazy"></iframe>
+      </div>
+      <a class="pill pill--blanc contact__cal-link" href="https://calendly.com/jyn-chereze/decouverte" target="_blank" rel="noopener" data-cta>Prenez un appel</a>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="foot__in">
+    <img src="assets/logo-blanc.png" alt="Meujesse Learning">
+    <p>Meujesse Learning · Agence Digital Learning</p>
+    <ul class="foot__social">
+      <li><a href="https://meujesselearning.com" target="_blank" rel="noopener" aria-label="Site internet"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5c3 3 3 16 0 19M12 2.5c-3 3-3 16 0 19"/></svg><span>Site</span></a></li>
+      <li><a href="https://www.linkedin.com/in/jynchereze/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5v6M8 7.5v.1M12 16.5v-6M12 13c0-1.5 1-2.5 2.5-2.5S17 11.5 17 13v3.5" /></svg><span>LinkedIn</span></a></li>
+      <li><a href="https://www.youtube.com/@meujesselearning" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.2v5.6l5-2.8z" fill="currentColor" stroke="none"/></svg><span>YouTube</span></a></li>
+    </ul>
+  </div>
+</footer>
+
+<!-- ============================ MODAL ============================ -->
+<div class="modal" data-modal hidden>
+  <div class="modal__back" data-modal-close></div>
+  <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal__bar">
+      <p id="modal-title" class="modal__title" data-modal-title>Module</p>
+      <div class="modal__tools">
+        <a class="pill pill--ghost modal__ext" href="#" target="_blank" rel="noopener" data-modal-ext>Ouvrir en plein écran</a>
+        <button class="modal__close" type="button" data-modal-close aria-label="Fermer">×</button>
+      </div>
+    </div>
+    <div class="modal__frame" data-modal-frame></div>
+    <p class="modal__hint">Extrait réel, hébergé tel qu'il est livré au client. Le son fait partie de l'expérience.</p>
+  </div>
+</div>
+
+<!-- ============================ TOAST ============================ -->
+<div class="toast" data-toast hidden role="status">
+  <span class="toast__d20" aria-hidden="true"></span>
+  <div>
+    <b data-toast-title>On fait la même chose pour votre équipe&nbsp;?</b>
+    <span data-toast-text>Prenez un appel pour en parler, sans engagement.</span>
+  </div>
+  <a class="pill pill--rouge" href="https://calendly.com/jyn-chereze/decouverte" target="_blank" rel="noopener">Prenez un appel</a>
+  <button type="button" class="toast__x" data-toast-close aria-label="Fermer">×</button>
+</div>
+
+<script src="assets/app.js?v=25"></script>
+</body>
+</html>
